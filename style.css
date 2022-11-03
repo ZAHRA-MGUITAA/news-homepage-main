@@ -152,7 +152,10 @@ main {
 }
 .column{
     display: flex;
-    padding: 0px 20px 0px 0px;
+ 
+}
+.column:not(:last-child) {
+    padding: 0px 40px 0px 0px;
 }
 h3.number {
     font-size: 30px;
