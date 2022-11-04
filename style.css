@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 @font-face {
@@ -78,7 +79,7 @@ nav ul li {
 /* Mian */
 main {
   margin: 40px 0px 60px 0px;
-  /* margin-bottom: 60px; */
+
 }
 /* Section 1 */
 
@@ -95,7 +96,7 @@ main {
   font-family: "inter-extra-bold";
   font-weight: bold;
   margin: 20px 0px 0px 0px;
-  /* margin-bottom: 0px; */
+  
 }
 
 .intro {
@@ -133,7 +134,7 @@ main {
 }
 .sec12 h6 {
   font-size: 18px;
-  margin: 0px;
+  margin: 0px 0px 10px;
 }
 
 .trending:not(:last-child):after {
@@ -165,6 +166,7 @@ h3.number {
 h2.title {
   font-family: "inter-extra-bold";
   font-size: 18px;
+  margin: 10px 0px;
 }
 .section2 img {
   width: 125px;
@@ -176,11 +178,22 @@ h2.title {
 }
 
 a.icon {
-    display: none;
+  display: none;
+}
+
+li:hover,
+h2.title:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.sec12 h6:hover {
+  color: hsl(35, 77%, 62%);
+}
+.intro button:hover {
+  background: hsl(240, 100%, 5%);
 }
 
 @media (max-width: 600px) {
-  
   .section1,
   .text-sec1,
   .section2 {
@@ -213,48 +226,47 @@ a.icon {
     margin: 0px 0px 10px;
   }
 
-  nav ul{
+  nav ul {
     display: none;
   }
   nav img {
     vertical-align: middle;
-}
-.logo img {
+  }
+  .logo img {
     width: 60%;
     object-fit: cover;
-}
-nav ul li {
+  }
+  nav ul li {
     display: block;
     margin: 0 0 25px 0;
     font-size: 20px;
-}
-/* ul#menu {
-    margin-top: 50px;
-} */
+  }
 
-nav {
+
+  nav {
     background: #ffffff;
-    /* padding: 20px;
-    z-index: 99; */
-}
-ul#menu {
+
+  }
+  ul#menu {
     position: absolute;
     background: #ffffff;
-    left: 95px;
-    padding: 150px 60px 0px 60px;
+    right: 0;
+    padding: 150px 40px 0px 40px;
     z-index: 99;
     width: 70%;
     height: 100%;
     top: 0;
-}
+  }
 
-img.close-menu {
+  img.close-menu {
     position: absolute;
     top: 20px;
-    right: 0;
-}
-a.icon {
+    right: 15px;
+  }
+  a.icon {
     display: block !important;
-}
+  }
+
+
 
 }
