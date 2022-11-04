@@ -253,6 +253,8 @@ img.close-menu {
     top: 20px;
     right: 0;
 }
-
+a.icon {
+    display: block !important;
+}
 
 }
