@@ -14,7 +14,12 @@
                 <img src="images\logo.svg" alt="">
             </div>
             <nav>
-               <ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="images/icon-menu.svg" alt=""></a>
+                  
+               <ul id="menu">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="images/icon-menu-close.svg" class="close-menu" alt=""></a>
                 <li>Home</li>
                 <li>New</li>
                 <li>Popular</li>
@@ -79,5 +84,17 @@
             </div>
         </main>
     </div>
+
+
+<script>
+    function myFunction(){
+        navlink = document.getElementById("menu");
+        if(navlink.style.display === "block"){
+            navlink.style.display = "none";
+        }else{
+            navlink.style.display = "block";
+        }
+    }
+</script>
 </body>
 </html>
