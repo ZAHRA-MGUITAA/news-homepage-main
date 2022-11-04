@@ -19,14 +19,14 @@
 }
 body {
   font-family: "inter-regular";
-  padding-top: 30px;
 }
 
 .container {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding: 30px 35px 0px 35px;
+  /* padding-right: 35px; */
   margin-left: auto;
   margin-right: auto;
+  /* padding-top: 30px; */
 }
 
 /* Small */
@@ -65,7 +65,7 @@ header,
 
 /*Header*/
 header {
-  display: flex;
+  
   justify-content: space-between;
 }
 nav ul {
@@ -79,7 +79,6 @@ nav ul li {
 /* Mian */
 main {
   margin: 40px 0px 60px 0px;
-
 }
 /* Section 1 */
 
@@ -96,7 +95,6 @@ main {
   font-family: "inter-extra-bold";
   font-weight: bold;
   margin: 20px 0px 0px 0px;
-  
 }
 
 .intro {
@@ -242,10 +240,8 @@ h2.title:hover {
     font-size: 20px;
   }
 
-
   nav {
     background: #ffffff;
-
   }
   ul#menu {
     position: absolute;
@@ -266,7 +262,12 @@ h2.title:hover {
   a.icon {
     display: block !important;
   }
-
-
-
+  #overlay {
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    position: absolute;
+    opacity: 0.5;
+    display: none;
+  }
 }
